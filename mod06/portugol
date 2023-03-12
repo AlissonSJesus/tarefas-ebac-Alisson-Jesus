@@ -1,0 +1,20 @@
+Abrir os olhos
+Importunar a fêmea ao lado
+Levantar da cama
+Caminhar até o banheiro
+Se estiver vestido
+    Retirar peças de roupa
+Abrir porta do box
+Entrar no box
+Tomar banho
+Enxugar-se
+Se for dia de exercício físico
+    Se a porta estiver trancada
+        Pegar chave
+        Inserir chave
+        girar chave em sentido antihorário
+        girar maçaneta em sentido horário
+    Ir à academia
+    Voltar da academia
+Fazer o café
+Sair para o trabalho
