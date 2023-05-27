@@ -1,0 +1,41 @@
+A injeção de dependências resolve o problema do acoplamento rígido entre as classes, permitindo
+que as dependências sejam fornecidas externamente às classes que precisam delas, tornando o código mais legível e fácil
+de testar.
+
+O Spring IoC (Inversion of Control) Container é o mecanismo principal do Spring responsável por gerenciar e controlar
+as dependências e componentes de uma aplicação. Ele implementa o padrão Injeção de Dependências e oferece um container
+que cuida da criação, configuração e injeção de dependências nos objetos. O container do Spring IoC é responsável por
+três tarefas principais: Instanciação, Injeção de Dependências e Gerenciamento do Ciclo de Vida.
+
+Os objetos gerenciados pelo container do Spring são chamados de Beans. Uma aplicação rodando pode ter vários beans
+ativos e gerenciados pelo Spring.Esses beans são os mesmos objetos que nós utilizamos no projeto normalmente, a única
+diferença é que eles são gerenciados pelo IoC Container. Existem várias formas de declarar um bean do Spring, a mais
+conhecida é anotando a classe com @Component.
+
+Outras anotações semânticas podem ser usadas também, como por exemplo @Controller, @Service, @Repository, etc.
+
+Um exemplo seria:
+
+public interface ServicoEmail {
+    void enviarEmail(String destinatario, String mensagem);
+}
+
+public class ServicoEmailImpl implements ServicoEmail {
+    public void enviarEmail(String destinatario, String mensagem) {
+        // Lógica para enviar e-mail
+    }
+}
+
+@Component
+public class Cliente {
+    private ServicoEmail servicoEmail;
+
+    @Autowired
+    public Cliente(ServicoEmail servicoEmail) {
+        this.servicoEmail = servicoEmail;
+    }
+
+    public void enviarNotificacao(String destinatario, String mensagem) {
+        servicoEmail.enviarEmail(destinatario, mensagem);
+    }
+}
