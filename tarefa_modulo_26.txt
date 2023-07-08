@@ -1,0 +1,26 @@
+Tarefa Módulo 26
+
+O PostgreSQL é um sistema de gerenciamento de banco de dados relacional (SGBDR) que foi desenvolvido pela primeira vez na Universidade da Califórnia, em Berkeley, 
+nos anos 80. Ele é conhecido por sua confiabilidade, robustez e recursos avançados. Aqui estão alguns pontos importantes sobre o PostgreSQL:
+
+    1. Características: O PostgreSQL oferece uma ampla gama de recursos, incluindo suporte para transações ACID (Atomicidade, Consistência, Isolamento e Durabilidade), 
+chaves estrangeiras, integridade referencial, desencadeadores (triggers), funções armazenadas, visões, replicação e muito mais. Além disso, ele suporta várias 
+linguagens de programação para escrever procedimentos armazenados, incluindo PL/pgSQL (semelhante ao SQL), PL/Python, PL/Java, PL/Perl, entre outras.
+
+    2. Modelo de dados: O PostgreSQL é um banco de dados relacional, o que significa que ele segue o modelo de dados relacional. Ele permite a criação de tabelas 
+com colunas e linhas, relacionamentos entre tabelas usando chaves estrangeiras e a realização de consultas usando a linguagem SQL (Structured Query Language).
+
+    3. Suporte a SQL: O PostgreSQL suporta a maioria dos recursos do SQL padrão ANSI, juntamente com várias extensões específicas do PostgreSQL. Ele oferece suporte 
+a consultas complexas, junções, subconsultas, agregação de dados, ordenação, índices, restrições, etc.
+
+    4. Extensibilidade: O PostgreSQL é altamente extensível. Ele permite que você crie seus próprios tipos de dados, funções definidas pelo usuário, operadores 
+personalizados e muito mais. Além disso, existem várias extensões disponíveis desenvolvidas pela comunidade que adicionam recursos adicionais ao PostgreSQL, 
+como suporte a JSON, GIS (Geographic Information System), entre outros.
+
+    5. Escalabilidade e Desempenho: O PostgreSQL é conhecido por seu desempenho e escalabilidade. Ele pode lidar com grandes quantidades de dados e oferece recursos 
+avançados de otimização de consultas, como índices, estatísticas, planos de execução customizados e paralelismo. Além disso, o PostgreSQL suporta replicação nativa 
+e oferece opções para dimensionar o sistema, como particionamento de tabelas.
+
+    6. Comunidade Ativa: O PostgreSQL possui uma comunidade de desenvolvedores e usuários muito ativa. A comunidade contribui com melhorias, correções de bugs e 
+desenvolvimento de novos recursos para o projeto. Além disso, existem muitos recursos online, como documentação oficial, fóruns de discussão e grupos de usuários, 
+nos quais é possível obter suporte e compartilhar conhecimentos.
