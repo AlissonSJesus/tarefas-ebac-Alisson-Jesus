@@ -1,7 +1,6 @@
 package com.alisson;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 import java.util.List;
 
@@ -11,7 +10,7 @@ import com.alisson.dao.ClientDao;
 import com.alisson.dao.IClientDao;
 import com.alisson.domain.Client;
 
-public class ClientTest {
+public class ClientTest implements ITest{
     private IClientDao clientDao = new ClientDao();
 
     @Test
